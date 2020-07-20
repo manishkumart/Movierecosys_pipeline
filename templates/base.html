@@ -9,15 +9,30 @@
  
  
 <style>
-    .Title { color: Black; }
+    .Title { color: Black;
+      font-size: 50px;
+  text-align: center;
+  }
     .one{
       position : left;
-      font-size: 50px;
+      font-size: 10px;
       color: green;
   }
   .second{
   text-align: center;
   }
+  #leftbox { 
+                float:left;  
+                background:white; 
+                width:35%; 
+                height:280px; 
+            } 
+   #middlebox{ 
+                float:left;  
+                background:white; 
+                width:50%; 
+                height:280px; 
+            } 
 
 </style>
 
@@ -25,7 +40,7 @@
 <body>
 
 
-<div id="particles-js">
+
 <center>
 
 <h1 class="Title">Movie Recommendation System</h1>
@@ -38,22 +53,22 @@
         {% block content %}
         {% endblock %}
       </div>
-  <div>
-    
-  </div>
- <div class="card-body">
-            
-  
-       <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="manish-kumar-thota-0136ab125"><a class="LI-simple-link" href='https://in.linkedin.com/in/manish-kumar-thota-0136ab125?trk=profile-badge'>Manish Kumar Thota</a></div>
-
+ <div id = "boxes"> 
            
-             
-      
-          <h5 class="card-title">Data Science enthusiast</h3>
+              
+            <div id = "leftbox"> 
+                
+               
+       <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="manish-kumar-thota-0136ab125"><a class="LI-simple-link" href='https://in.linkedin.com/in/manish-kumar-thota-0136ab125?trk=profile-badge'>Manish Kumar Thota</a></div>
+            </div>  
+              
+            <div id = "middlebox"> 
+                 <h5 class="card-title">Data Science enthusiast</h3>
             <h5 class="card-text">Made with <span>&#10084;</span> </h4>
-          </div>
-  </center>
-</div>
+            </div> 
+  </div>
+
+
 
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
       
