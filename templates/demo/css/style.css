@@ -39,9 +39,64 @@ body{
 }
 
 canvas{
-  display:block;
+  display:inline;
   vertical-align:bottom;
 }
+
+.Title {
+  color: white;
+  text-align: center;
+  font-size: 90px;
+ 
+  
+}
+
+  
+.one a:link    {
+
+  color:red;
+  font-size: 50px;
+  position = left;
+ 
+  
+}
+
+
+
+#second{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+
+  font-size: 40px
+
+}
+#card-body{
+ color: white;
+  text-align: center;
+  font-size: 50px;
+}
+#card-text{
+ color: white;
+  text-align: center;
+  font-size: 50px;
+}
+#card-text2{
+ color: white;
+  text-align: center;
+  font-size: 50px;
+}
+.two a:link    {
+
+  color:red;
+  font-size: 50px;
+  position = left;
+ 
+  
+}
+
+
+
 
 
 /* ---- stats.js ---- */
