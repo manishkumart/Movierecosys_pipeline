@@ -10,7 +10,15 @@
  
 <style>
     .Title { color: Black; }
-    
+    .one{
+      position : left;
+      font-size: 50px;
+      color: green;
+  }
+  .second{
+  text-align: center;
+  }
+
 </style>
 
 </head>
@@ -21,7 +29,7 @@
 <center>
 
 <h1 class="Title">Movie Recommendation System</h1>
-
+  </center>
 
 
  <h4 class = "one" ><a href="{{url_for('home')}}">Home</a></h4>
@@ -30,6 +38,9 @@
         {% block content %}
         {% endblock %}
       </div>
+  <div>
+    
+  </div>
  <div class="card-body">
             
   
