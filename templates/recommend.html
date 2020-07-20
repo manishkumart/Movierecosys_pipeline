@@ -2,6 +2,7 @@
 {% block content %}
 
   {% if t=='s' %}
+<center>
   <div class="shadow p-3 mb-5 bg-white rounded">
     <h3 style="color:rgb(0, 102, 255)">Sorry! This movie is not in our database.</h3>
     <h3 style="color:rgb(0, 102, 255)">Please check if you spelled it correct.</h3>
@@ -19,6 +20,7 @@
         <li class="list-group-item" style="color:rgb(0, 179, 0)"><strong>{{m|capitalize}}</strong></li>
       {% endfor %}
     </ul>
+</center>
   {% endif %}
 
 {% endblock %}
