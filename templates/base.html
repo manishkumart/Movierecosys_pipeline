@@ -27,9 +27,7 @@
       
   }
     .main one{
-      position : left;
-      font-size: 20px;
-      color: balck;
+     
       postion: absolute
   }
   .main second{
@@ -39,7 +37,7 @@
   .main boxes{
     position:absolute;
   }
-  .main boxes leftbox{ float:right;  
+  .main leftbox{ float:right;  
                 background:white; 
                 width:50%; 
                 height:280px; 
@@ -49,7 +47,7 @@
     
                 
             } 
-   .main boxes middlebox{ 
+   .main middlebox{ 
                 float:right;  
                 background:white; 
                 width:35%; 
@@ -157,32 +155,26 @@ animation-delay: 1.5s;
 
 
 
- <h4><a href="{{url_for('home')}}">Home</a></h4>
+ <h4 class="one"><a href="{{url_for('home')}}">Home</a></h4>
     
       <div id="second">
         {% block content %}
         {% endblock %}
       </div>
 
- <div class = "boxes"> 
-           
-              
-            <div id = "middlebox"> 
-                
-           
-              
-         
-                
-               
-       <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="manish-kumar-thota-0136ab125"><a class="LI-simple-link" href='https://in.linkedin.com/in/manish-kumar-thota-0136ab125?trk=profile-badge'>Manish Kumar Thota</a></div>
-            </div>  
-              
-            <div id = "leftbox"> 
+
+           <div id = "leftbox"> 
                  <h5 class="card-title">Data Science enthusiast</h3>
             <h5 class="card-text">Made with <span>❤️</span> </h4>
             </div> 
+              
+            <div id = "middlebox"> 
+                <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="manish-kumar-thota-0136ab125"><a class="LI-simple-link" href='https://in.linkedin.com/in/manish-kumar-thota-0136ab125?trk=profile-badge'>Manish Kumar Thota</a></div>
+            </div>  
+              
+            
   </div>
-  </div>
+
 
 
 <div class ="animation-area">
