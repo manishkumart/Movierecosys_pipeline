@@ -14,38 +14,47 @@
   padding:0;
 }
   body{
-    font-family: Baloo;
+    font-family: Gentona;
   }
-    .Title { color: Black;
-      font-size: 50px;
+  .main{
+    width: 100%;
+    position: absolute;
+  }
+    .main h1{ color:white;
+      font-size: 100px;
       text-align: center;
-      position: absolute;
+      margin-top: 2%;
+      
   }
-    .one{
+    .main one{
       position : left;
       font-size: 20px;
       color: balck;
+      postion: absolute
   }
-  .second{
+  .main second{
   text-align: center;
     position: absolute;
   }
-  #leftbox { float:right;  
+  .main boxes{
+    position:absolute;
+  }
+  .main boxes leftbox{ float:right;  
                 background:white; 
                 width:50%; 
                 height:280px; 
                font-size: 40px;
                text-align: center;
                color:blue;
-    position: absolute;
+    
                 
             } 
-   #middlebox{ 
+   .main boxes middlebox{ 
                 float:right;  
                 background:white; 
                 width:35%; 
                 height:280px; 
-     position: absolute;
+     
                 
             } 
 
@@ -141,13 +150,40 @@ animation-delay: 1.5s;
 
 </head>
 <body>
+ <div class="main">
+<h1>Movie Recommendation System</h1>
+ 
 
 
 
-<center>
 
-<h1 class="Title">Movie Recommendation System</h1>
-  </center>
+ <h4><a href="{{url_for('home')}}">Home</a></h4>
+    
+      <div id="second">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+ <div class = "boxes"> 
+           
+              
+            <div id = "middlebox"> 
+                
+           
+              
+         
+                
+               
+       <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="manish-kumar-thota-0136ab125"><a class="LI-simple-link" href='https://in.linkedin.com/in/manish-kumar-thota-0136ab125?trk=profile-badge'>Manish Kumar Thota</a></div>
+            </div>  
+              
+            <div id = "leftbox"> 
+                 <h5 class="card-title">Data Science enthusiast</h3>
+            <h5 class="card-text">Made with <span>❤️</span> </h4>
+            </div> 
+  </div>
+  </div>
+
 
 <div class ="animation-area">
    <ul class="box-area">
@@ -161,29 +197,7 @@ animation-delay: 1.5s;
       <li></li>
     </ul>
 </div>
-
-
- <h4 class = "one" ><a href="{{url_for('home')}}">Home</a></h4>
-    
-      <div id="second">
-        {% block content %}
-        {% endblock %}
-      </div>
- <div id = "boxes"> 
-           
-              
-            <div id = "middlebox"> 
-                
-               
-       <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="manish-kumar-thota-0136ab125"><a class="LI-simple-link" href='https://in.linkedin.com/in/manish-kumar-thota-0136ab125?trk=profile-badge'>Manish Kumar Thota</a></div>
-            </div>  
-              
-            <div id = "leftbox"> 
-                 <h5 class="card-title">Data Science enthusiast</h3>
-            <h5 class="card-text">Made with <span>❤️</span> </h4>
-            </div> 
-  </div>
-
+ 
 
 
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
